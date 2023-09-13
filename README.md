@@ -1,10 +1,12 @@
 # SOLID принципы на примере игры "Угадай число"
 
 ##
-## 1. S - Single Responsibility Proncipal - принцып единой ответственности
-#### Реализация данного принципа отражается в любых классах этой игры - существует единственная причина их сущестовования. GuessNumber/GuessNumber/Config/AppConfig.cs
-#### GuessNumber/GuessNumber/Config/AppConfig.cs - конфигурация игры;
-#### GuessNumber/GuessNumber/Logic/GuessNumberGame.cs - логика игры;
+## 1. S - Single Responsibility Proncipal - принцип единой ответственности
+#### Реализация данного принципа отражается в любых классах этой игры - существует единственная причина их сущестовования. 
+##### GuessNumber/GuessNumber/Config/AppConfig.cs - конфигурация игры;
+##### GuessNumber/GuessNumber/Logic/GuessNumberGame.cs - логика игры;
+##### GuessNumber/GuessNumber/Logic/Players/AIMachine.cs - игрок искуственный интеллект - находит число методом деления отрезка пополам;
+##### GuessNumber/GuessNumber/Logic/Players/Human.cs - игрок человек - вручную угадывающий числа;
 
 ##
 ## 2. O - Opened/Closed Principal - принцип открытости/закрытости 
